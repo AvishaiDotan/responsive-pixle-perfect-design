@@ -17,3 +17,11 @@ function onToggleMenu() {
         elBtn.innerHTML = `<i class="fa-solid fa-burger"></i>`
     }
 }
+
+function onOpenLink(elA) {
+    const elLinks = [...document.querySelectorAll('.nav-list li')]
+
+    elLinks.forEach(link => link.classList.remove('toggled'))
+
+    elA.classList.add('toggled')
+}
