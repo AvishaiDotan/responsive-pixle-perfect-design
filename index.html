@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+
+    <link rel="stylesheet" href="styles\mobile-first.css">
+</head>
+
+<body class="main-layout">
+    <div class="main-screen hide full" onclick="onToggleMenu()"></div>
+    <header class="main-header full main-layout ">
+        <!-- CR This Part -->
+        <section class="header-content header-layout">
+            <div class="logo header-logo">Blogin<span class="logo-dot">.</span></div>
+            <nav class="main-nav">
+                <ul class="nav-list flex justify-end clean-list">
+                    <li onclick="onOpenLink(this)"><a href="#">Journal</a>
+                        <ul class="clean-list dropdown">
+                            <li class="inner-li">October 2016</li>
+                            <li class="inner-li">January 2017</li>
+                            <li class="inner-li">April 2017</li>
+                            <li class="inner-li">July 2017</li>
+                        </ul>
+                    </li>
+                    <li onclick="onOpenLink(this)"><a href="#">About</a></li>
+                    <li onclick="onOpenLink(this)"><a href="#">Work</a></li>
+                    <li onclick="onOpenLink(this)"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="open-menu-btn" type="button" onclick="onToggleMenu()">
+                <i class="fa-solid fa-burger"></i>
+            </button>
+        </section>
+    </header>
+
+    <main class="main-content cards-layout">
+        <!-- CR Ask about Name -->
+        <article class="card flex wrap">
+            <img src="img/001.jpg" alt="" class="card-img">
+            <div class="card-content-container card-content-layout">
+                <h2 class="card-title clean-text">
+                    Duis aute irure dolor in
+                    henderit in voluptate.
+                </h2>
+                <p class="card-text clean-text">
+                    <span class="first-part">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </span>
+                    <br>
+                    <span>
+                        <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </span>
+                </p>
+                <button onclick="onSignNewsletter()" class="card-btn" type="button">Continue Reading </button>
+            </div>
+        </article>
+
+        <article class="card flex wrap">
+            <img src="img/002.jpg" alt="" class="card-img">
+            <div class="card-content-container card-content-layout">
+                <h2 class="card-title clean-text">
+                    Duis aute irure dolor in
+                    henderit in voluptate.
+                </h2>
+                <p class="card-text clean-text">
+                    <span class="first-part">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </span>
+                    <br>
+                    <span>
+                        <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </span>
+                </p>
+                <button onclick="onSignNewsletter()" class="card-btn" type="button">Continue Reading </button>
+            </div>
+        </article>
+
+        <article class="card flex wrap">
+            <img src="img/003.jpg" alt="" class="card-img">
+            <div class="card-content-container card-content-layout">
+                <h2 class="card-title clean-text">
+                    Duis aute irure dolor in
+                    henderit in voluptate.
+                </h2>
+                <p class="card-text clean-text">
+                    <span class="first-part">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </span>
+                    <br>
+                    <span>
+                        <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </span>
+                </p>
+                <button onclick="onSignNewsletter()" class="card-btn" type="button">Continue Reading </button>
+            </div>
+        </article>
+        <section class="pagination pagination-layout">
+            <button class="prev-btn clear-btn flex justify-center align-center" type="button">
+                <img src="icons/arrow-left.png" alt="left arrow icon" class="left-arrow">
+                <span class="btn-text">Previous</span>
+            </button>
+            <button class="next-btn clear-btn flex justify-center align-center" type="button">
+                <span class="btn-text">Next</span>
+                <img src="icons/arrow-right.png" alt="right arrow icon" class="right-arrow">
+            </button>
+        </section>
+    </main>
+
+    <footer class="main-footer full main-footer-layout">
+        <div class="logo footer-logo">Blogin<span class="logo-dot">.</span></div>
+        <p class="footer-rights clean-text">
+            © 2014 Blogin.com - All Rights Reserved -
+            Find more free Templates at <span class="highlight">Pixelhint.com</span>
+        </p>
+        <ul class="footer-social-links clean-list flex">
+            <li class="facebook-link logo-link">
+                <button class="clear-btn" type="button">
+                    <img src="icons/facebook.png" alt="facebook logo" class="facebook-icon icon">
+                </button>
+            </li>
+
+            <li class="twitter-link logo-link">
+                <button class="clear-btn" type="button">
+                    <img src="icons/twitter.png" alt="twitter logo" class="twitter-icon icon">
+                </button>
+            </li>
+
+            <li class="be-link logo-link">
+                <!-- ::before div content: ''-->
+                <!-- <div></div> -->
+                <button class="clear-btn" type="button">
+                    <img src="icons/be.png" alt="be logo" class="be-icon icon">
+                </button>
+                <!-- ::after div content: ''-->
+                <!-- <div></div> -->
+            </li>
+
+            <li class="basketball-link logo-link">
+                <button class="clear-btn" type="button">
+                    <img src="icons/basketball.png" alt="basketball logo" class="basketball-icon icon">
+                </button>
+            </li>
+
+        </ul>
+    </footer>
+
+    <section class="sign-newsletter-modal full">
+        <form>
+            <h2 class="sign-newsletter-heading">
+                Join us to get access to the latest stories!
+            </h2>
+            <label>
+                <input type="email" placeholder="Sumbit Your Email Address">
+            </label>
+            <div class="form-btns">
+                <button type="button">Submit</button>
+                <button onclick="onCloseModal()" type="button">Cancel</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://kit.fontawesome.com/73ec7ec8db.js" crossorigin="anonymous"></script>
+    <script src="js\main.js"></script>
+</body>
+
+</html>
